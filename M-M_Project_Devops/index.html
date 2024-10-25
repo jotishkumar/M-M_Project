@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-image: url("https://mdbcdn.b-cdn.net/img/new/fluid/nature/015.webp");
+        opacity: 90%;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        display: flex;
+        background-color: #333333;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        max-width: 800px;
+      }
+
+      .welcome {
+        flex: 2;
+        padding: 20px;
+        text-align: center;
+        font-style: italic;
+        color: wheat;
+      }
+
+      .form {
+        flex: 1;
+        padding: 20px;
+        color: gainsboro;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: wheat; /* Added label text color */
+      }
+
+      input[type="submit"] {
+        background-color: green;
+        width: 100%;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="welcome">
+        <h2>Welcome to M&M Store</h2>
+        <p>
+          <i
+            >Your one-stop shop for high-quality home and lifestyle essentials,
+            offering a curated selection of products designed to enhance your
+            comfort and style.</i
+          >
+        </p>
+      </div>
+      <div class="form">
+        <form action="login.php" method="post">
+          <!-- Corrected form tags -->
+          <h2>Login</h2>
+          <label for="username">Username:</label>
+          <!-- Corrected label tags -->
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+          /><br /><br />
+
+          <label for="password">Password:</label>
+          <!-- Corrected label tags -->
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+          /><br /><br />
+
+          <input type="submit" value="Login" />
+        </form>
+        <!-- Corrected form closing tag -->
+      </div>
+    </div>
+  </body>
+</html>
